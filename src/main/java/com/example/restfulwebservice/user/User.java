@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 import java.util.Date;
@@ -14,6 +15,7 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 //@JsonIgnoreProperties(value = {"password", "ssn"})
 @JsonFilter("UserInfo")
 public class User {
